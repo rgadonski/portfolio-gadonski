@@ -1,0 +1,145 @@
+/*Navegação*/
+.menu {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 420px;
+  
+}
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.menu ul li a{
+  font-size: 1.125rem;
+  line-height: 1.3;
+  font-weight: bold;
+  color: #F1FFFC;
+  padding: 10px 10px;
+  display: block;
+
+}
+.menu ul li a:hover{
+  color: #A5A9D0;
+}
+/*Navegação responsiva max-width 920px*/
+@media (max-width: 920px) {
+  .menu{
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+  }
+  .logo {
+    width: 300px;
+  }
+}
+
+/*Header*/
+.header {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 100px;
+  align-items: center;
+
+}
+
+.texto-header h1{
+  font-size: 4.4rem;
+  line-height: 1.1;
+  margin-bottom: 30px;
+  font-family: 'K2D', sans-serif;
+  position: relative;
+}
+.texto-header h1 .texto-verde{
+  color: #94FFE7;
+}
+.texto-header p{
+  font-size: 1.1rem;
+  margin-top: 20px;
+  line-height: 1.4;
+  max-width: 60ch;
+  letter-spacing: 0.7px;
+}
+.texto-header h1::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url('../imagens-portfolio/detalhe-header.svg') no-repeat center;
+  position: absolute;
+  top: -15px;
+  left: -100px;
+  z-index: -1;
+}
+.img-header img{
+  max-width: 100%;
+  border-radius: 4px;
+}
+/*Navegação responsiva max-width 1018px*/
+@media (max-width: 1018px) {
+  .texto-header h1{
+    font-size: 3rem;
+  }
+  .texto-header p{
+    font-size: 1rem;
+  }
+  .header {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+}
+
+@media (max-width: 860px) {
+    .texto-header h1{
+    font-size: 2.3rem;
+   }
+   .header {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+   }
+   .texto-header h1::before {
+      display: none;
+   }
+   img-header img {
+      object-fit: fill;
+   }
+}
+
+@media (max-width: 700px) {
+    .header {
+      grid-template-columns: 1fr;
+      justify-items: center;
+   }
+    .img-header img {
+      max-width: 80%; 
+      margin: 0 auto;
+   }
+   .texto-header h1::after {
+    content: "";
+    display: block;
+    width: 230px;
+    height: 100px;
+    background: url('../imagens-portfolio/detalhe-header.svg') no-repeat center;
+    position: absolute;
+    top: 15px;
+    left: 200px;
+    z-index: -1;
+   
+    
+   
+   
+
+
+}
+
