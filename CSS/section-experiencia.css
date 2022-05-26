@@ -1,0 +1,89 @@
+#experiencia {
+  
+  padding: 40px 40px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #F9F9F9;
+
+}
+
+.sobre-experiencia {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  position: relative;
+  
+}
+
+.sobre-experiencia h2 {
+  color: #28272E;
+  font-size: 4.5rem;
+  font-family: 'K2D', sans-serif;
+}
+
+.sobre-experiencia p {
+  color: #16151A;
+  font-size: 1.125rem;
+  max-width: 50ch;
+}
+
+.sobre-experiencia h2::after {
+  content: "+XP";
+  color: #DDDEEB;
+  font-family: 'K2D', sans-serif;
+  font-size: 12.5rem;
+  position: absolute;
+  top: -25px;
+  left: 650px;
+}
+
+
+
+.item-experiencia {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 40px;
+  border-bottom: solid #DDDEEB 2px;
+  gap: 40px;
+
+}
+
+.item-experiencia .item-experiencia-ano {
+  border-left: solid #DDDEEB 3px;
+  padding: 10px;
+}
+
+
+
+
+.item-experiencia-local h3, .itens-experiencia-container h3{
+  padding-bottom: 10px;
+  color: #16151A;
+}
+
+.item-experiencia .item-experiencia-ano {
+  color: #16151A;
+}
+
+.item-experiencia-local p{
+  color: #16151A;
+  font-size: 1rem;
+  padding-bottom: 20px;
+}
+
+.itens-experiencia-lista-habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: start;
+  max-width: 300px;
+}
+
+.item-experiencia-habilidade{
+  background-color: #4A508C;
+  color: #F2F3FA;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 1rem;
+}
