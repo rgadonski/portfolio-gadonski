@@ -1,7 +1,10 @@
 /*Navegação*/
 .menu {
   max-width: 1200px;
-  padding: 40px 20px;
+  padding-top: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -34,7 +37,7 @@
   .menu{
     flex-direction: column;
     gap: 40px;
-    padding: 20px;
+    padding-left: 20px;
   }
   .logo {
     width: 300px;
@@ -44,17 +47,17 @@
 /*Header*/
 .header {
   max-width: 1200px;
-  padding: 40px 20px;
+  padding: 60px 60px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1fr 1fr;
   gap: 100px;
   align-items: center;
 
 }
 
 .texto-header h1{
-  font-size: 4.4rem;
+  font-size: 4.6rem;
   line-height: 1.1;
   margin-bottom: 30px;
   font-family: 'K2D', sans-serif;

@@ -1,6 +1,7 @@
 #experiencia {
-  
-  padding: 40px 40px;
+  max-width: 1920px;
+  padding: 40px 60px;
+  padding-bottom: 60px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
@@ -34,18 +35,18 @@
   font-family: 'K2D', sans-serif;
   font-size: 12.5rem;
   position: absolute;
-  top: -25px;
-  left: 650px;
+  top: -35px;
+  left: 700px;
 }
 
 
 
 .item-experiencia {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 0.8fr 1.2fr 1fr;
   padding-top: 40px;
   border-bottom: solid #DDDEEB 2px;
-  gap: 40px;
+  gap: 60px;
 
 }
 
@@ -60,6 +61,10 @@
 .item-experiencia-local h3, .itens-experiencia-container h3{
   padding-bottom: 10px;
   color: #16151A;
+}
+
+.item-experiencia .item-experiencia-container {
+  justify-self: end;
 }
 
 .item-experiencia .item-experiencia-ano {
@@ -87,3 +92,80 @@
   border-radius: 4px;
   font-size: 1rem;
 }
+
+/*responsivo max 1200px*/
+@media (max-width: 1200px) {
+  .sobre-experiencia h2{
+    font-size: 3rem;
+  }
+  .sobre-experiencia p {
+    font-size: 1rem;
+  }
+  .sobre-experiencia h2::after {
+    content: "+XP";
+    color: #DDDEEB;
+    font-family: 'K2D', sans-serif;
+    font-size: 10rem;
+    position: absolute;
+    top: -35px;
+    left: 500px;
+  }
+
+}
+
+/*responsivo max 860px*/
+@media (max-width: 860px) {
+  .sobre-experiencia h2{
+    font-size: 2.2rem;
+  }
+  .sobre-experiencia p {
+    font-size: 1rem;
+  }
+  .sobre-experiencia h2::after {
+    content: "+XP";
+    color: #DDDEEB;
+    font-family: 'K2D', sans-serif;
+    font-size: 9rem;
+    position: absolute;
+    top: -30px;
+    left: 450px;
+  }
+  .item-experiencia{
+    gap: 40px;
+  }
+  .item-experiencia-local h3, .itens-experiencia-container h3 {
+    font-size: 1rem;
+  }
+
+  .item-experiencia-local p {
+    font-size: 0.9rem;
+  }
+  .item-experiencia-habilidade {
+    font-size: 0.9rem;
+  }
+
+}
+
+
+@media (max-width: 860px) {
+  .item-experiencia {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    border-radius: 4px;
+    background-color: aliceblue;
+    margin-top: 10px;
+    padding: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
