@@ -123,6 +123,7 @@
     .header {
       grid-template-columns: 1fr;
       justify-items: center;
+      padding: 30px;
    }
     .img-header img {
       max-width: 80%; 
@@ -136,8 +137,12 @@
     background: url('../imagens-portfolio/detalhe-header.svg') no-repeat center;
     position: absolute;
     top: 15px;
-    left: 200px;
+    left: 180px;
     z-index: -1;
+   }
+   .texto-header {
+     padding-top: 0px;
+     margin-top: -30px;
    }
     
    
