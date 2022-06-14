@@ -48,40 +48,89 @@ td.align-left {
   color: #ffffff;
   text-align: right;
 }
-table{
-  width: 80%;
-}
+
 
 .table-formacao {
   border-left: 10px solid rgba(99, 255, 219, 1);
   padding-left: 4px;
-  position: relative;
+  
   border-radius: 4px;
 }
 .table-cursos-intensivos td{
   font-size: 1.125rem;
   font-weight: bold;
+  max-width: 100%;
 }
-.table-cursos-intensivos td.align-left::before{
-  content: "";
-  display: block;
-  height: 14px;
-  width: 14px;
-  background: url('../imagens-portfolio/Rectangle\ 43.svg') no-repeat center;
-  position: absolute;
-  left: 40px;
+
   
- 
- 
-}
+.align-left li {
+    list-style-image: url('../imagens-portfolio/Rectangle\ 43.svg');
+    padding-top: 5px;
+  }
+
+
 .table-cursos-intensivos{
   margin-bottom: 24px;
 }
 
 .formacao-cursos .img-formacao {
-  height: 100%;
   object-fit: cover;
   object-position: center;
-  border-radius: 8px;
-  margin-top: 40px;
+  margin-top: 60px;
+  
+}
+
+/*responsivo max 1200px*/
+@media (max-width: 1200px) {
+  #formacao h2{
+    font-size: 3rem;
+  }
+  .table-cursos-intensivos td{
+    font-size: 1rem;
+  }
+  .formacao-cursos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .sobre-formacao{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    
+  }
+  .formacao-cursos .img-formacao {
+    display: none;
+  }
+  .table-cursos-intensivos{
+    float: right;
+  }
+  h3.cursos-intensivos{
+    float: right;
+    margin-right: 48px;
+  }
+
+  #formacao > div > div > div:nth-child(1) > table > tbody > tr:nth-child(1) > th > h4{
+    font-size: 1.1rem;
+  }
+}
+
+/*responsivo max 800px*/
+@media (max-width: 800px) {
+  .sobre-formacao {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+  }
+  .table-cursos-intensivos{
+    float: none;
+  }
+  h3.cursos-intensivos{
+    float: none;
+    margin-right: 0px;
+  }
+
+
+
+
 }
