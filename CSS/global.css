@@ -30,3 +30,7 @@ img {
   max-width: 100%;
   display: block;
 }
+
+.bg-white {
+  background-color: #f9f9f9;
+}
