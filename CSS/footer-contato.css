@@ -10,8 +10,9 @@
 
 
 .sobre-contato {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 20px;
 }
 
@@ -27,7 +28,29 @@
   max-width: 46ch;
 }
 
+.contato-dados {
+  color: #16151A;
+  font-size: 1.125rem;
+  position: relative;
+}
 
+.contato-dados li, .contato-dados li a {
+  font-weight: bold;
+  color: #16151A;
+  margin-bottom: 10px;
+}
+
+.whatsapp::before {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -30px;
+  background: url(../imagens-portfolio/whatsapp_black_36dp.svg) no-repeat center center;
+}
+
+ 
 
 
 
